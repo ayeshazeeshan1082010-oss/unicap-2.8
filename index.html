@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBid - Online Auction Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-gavel"></i>
+                <span class="brand-name">Green<span class="brand-accent">Bid</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="categories.html" class="nav-link">Categories</a>
+                <a href="my-items.html" class="nav-link">My Items</a>
+                <a href="notifications.html" class="nav-link">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </a>
+                <div class="nav-user">
+                    <img src="https://ui-avatars.com/api/?name=John+Doe&background=2d5016&color=fff" alt="User">
+                    <span>John Doe</span>
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-menu">
+                        <a href="profile.html">My Profile</a>
+                        <a href="my-bids.html">My Bids</a>
+                        <a href="settings.html">Settings</a>
+                        <hr>
+                        <a href="login.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Search -->
+    <section class="hero">
+        <div class="hero-pattern"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Discover Unique Items</h1>
+                <p class="hero-subtitle">Bid, win, and own extraordinary pieces from trusted sellers</p>
+                
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="Search for items, categories, or sellers...">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+
+                <div class="quick-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2,547</span>
+                        <span class="stat-label">Active Auctions</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">18,432</span>
+                        <span class="stat-label">Happy Bidders</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">$2.4M</span>
+                        <span class="stat-label">Total Value</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sell Item CTA -->
+    <section class="sell-cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Have something to sell?</h2>
+                    <p>List your item and reach thousands of potential buyers</p>
+                </div>
+                <a href="sell-item.html" class="btn-primary">
+                    <i class="fas fa-plus-circle"></i> Sell an Item
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Browse by Category</h2>
+                <a href="categories.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="categories-grid">
+                <a href="category-items.html?category=electronics" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Electronics</h3>
+                    <span class="item-count">(342 items)</span>
+                    <div class="category-overlay"></div>
+                </a>
+
+                <a href="category-items.html?category=furniture" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3>Furniture</h3>
+                    <span class="item-count">(189 items)</span>
+                    <div class="category-overlay"></div>
+                </a>
+
+                <a href="category-items.html?category=books" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Books</h3>
+                    <span class="item-count">(567 items)</span>
+                    <div class="category-overlay"></div>
+                </a>
+
+                <a href="category-items.html?category=art" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Art & Collectibles</h3>
+                    <span class="item-count">(234 items)</span>
+                    <div class="category-overlay"></div>
+                </a>
+
+                <a href="category-items.html?category=jewelry" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Jewelry</h3>
+                    <span class="item-count">(156 items)</span>
+                    <div class="category-overlay"></div>
+                </a>
+
+                <a href="category-items.html?category=sports" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-football-ball"></i>
+                    </div>
+                    <h3>Sports Equipment</h3>
+                    <span class="item-count">(298 items)</span>
+                    <div class="category-overlay"></div>
+                </a>
+
+                <a href="category-items.html?category=clothing" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Clothing & Fashion</h3>
+                    <span class="item-count">(421 items)</span>
+                    <div class="category-overlay"></div>
+                </a>
+
+                <a href="category-items.html?category=automotive" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Automotive</h3>
+                    <span class="item-count">(112 items)</span>
+                    <div class="category-overlay"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Auctions -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Auctions</h2>
+                <div class="filter-tabs">
+                    <button class="filter-tab active">Ending Soon</button>
+                    <button class="filter-tab">Newly Listed</button>
+                    <button class="filter-tab">Popular</button>
+                </div>
+            </div>
+
+            <div class="items-grid">
+                <!-- Item Card 1 -->
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=400&h=300&fit=crop" alt="Vintage Camera">
+                        <div class="item-badge">Ending Soon</div>
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title">Vintage Leica M3 Camera</h3>
+                        <div class="seller-info">
+                            <img src="https://ui-avatars.com/api/?name=Sarah+Johnson&background=2d5016&color=fff" alt="Seller">
+                            <span>Sarah Johnson</span>
+                            <span class="rating">★ 4.8</span>
+                        </div>
+                        <div class="bid-info">
+                            <div class="current-bid">
+                                <span class="label">Current Bid</span>
+                                <span class="price">$1,250</span>
+                            </div>
+                            <div class="time-left">
+                                <i class="far fa-clock"></i>
+                                <span>2h 34m</span>
+                            </div>
+                        </div>
+                        <a href="item-details.html?id=1" class="btn-secondary">View & Bid</a>
+                    </div>
+                </div>
+
+                <!-- Item Card 2 -->
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=300&fit=crop" alt="Modern Sofa">
+                        <div class="item-badge new">New</div>
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title">Designer Modern Sofa Set</h3>
+                        <div class="seller-info">
+                            <img src="https://ui-avatars.com/api/?name=Mike+Chen&background=2d5016&color=fff" alt="Seller">
+                            <span>Mike Chen</span>
+                            <span class="rating">★ 4.9</span>
+                        </div>
+                        <div class="bid-info">
+                            <div class="current-bid">
+                                <span class="label">Current Bid</span>
+                                <span class="price">$850</span>
+                            </div>
+                            <div class="time-left">
+                                <i class="far fa-clock"></i>
+                                <span>1d 5h</span>
+                            </div>
+                        </div>
+                        <a href="item-details.html?id=2" class="btn-secondary">View & Bid</a>
+                    </div>
+                </div>
+
+                <!-- Item Card 3 -->
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=300&fit=crop" alt="Books">
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title">Rare Book Collection - First Editions</h3>
+                        <div class="seller-info">
+                            <img src="https://ui-avatars.com/api/?name=Emma+Wilson&background=2d5016&color=fff" alt="Seller">
+                            <span>Emma Wilson</span>
+                            <span class="rating">★ 5.0</span>
+                        </div>
+                        <div class="bid-info">
+                            <div class="current-bid">
+                                <span class="label">Current Bid</span>
+                                <span class="price">$2,100</span>
+                            </div>
+                            <div class="time-left">
+                                <i class="far fa-clock"></i>
+                                <span>5h 12m</span>
+                            </div>
+                        </div>
+                        <a href="item-details.html?id=3" class="btn-secondary">View & Bid</a>
+                    </div>
+                </div>
+
+                <!-- Item Card 4 -->
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=400&h=300&fit=crop" alt="Watch">
+                        <div class="item-badge hot">Hot</div>
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title">Luxury Swiss Automatic Watch</h3>
+                        <div class="seller-info">
+                            <img src="https://ui-avatars.com/api/?name=David+Brown&background=2d5016&color=fff" alt="Seller">
+                            <span>David Brown</span>
+                            <span class="rating">★ 4.7</span>
+                        </div>
+                        <div class="bid-info">
+                            <div class="current-bid">
+                                <span class="label">Current Bid</span>
+                                <span class="price">$4,500</span>
+                            </div>
+                            <div class="time-left">
+                                <i class="far fa-clock"></i>
+                                <span>8h 45m</span>
+                            </div>
+                        </div>
+                        <a href="item-details.html?id=4" class="btn-secondary">View & Bid</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-gavel"></i>
+                        <span>Green<span class="brand-accent">Bid</span></span>
+                    </div>
+                    <p>Your trusted online auction platform for buying and selling unique items.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="categories.html">Browse Categories</a></li>
+                        <li><a href="sell-item.html">Sell an Item</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on new auctions</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 GreenBid. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
